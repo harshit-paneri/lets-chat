@@ -1,9 +1,14 @@
-### Build a simple quizzing app similar to menti meter
+# Real time chat
 
-## Features
+#### Build a simple chat application using raw web sockets in Node.js that supports the following features -
 
-- Admin should be allowed to add questions (MCQ, single answer)
-- Admin should be allowed to move to the next questions
-- Admin should be allowed to show the leaderboard to everyone
-- Users should be allowed to answer the questions
-- Users just need to poll the server for the next question, no need for it to be realtime
+- Allow an admin to create a new chat session/room. Admin should be allowed to set the following properties on the room -
+- Name
+- start_time
+- is_open
+- cool_down_time
+- Allow users to join the room and send messages
+- Allow users to upvote chat messages.
+- If chat messages reach more than 3 upvotes, move them over to a separate section.
+- If chat messages reach more than 10 upvotes, alert the admin to answer.
+
